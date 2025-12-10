@@ -1,0 +1,128 @@
+/* the 100vh and 100vw set the size of the body to fill the viewport (screen) */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+}
+/* this class specifies shape *
+
+
+
+/* these classes specify color */
+.green {
+  background-color: #1a9124;
+}
+.black {
+  background-color: #000000;
+}
+.blue {
+  background-color: #1189eb;
+}
+.purple {
+  background-color: hsl(281, 100%, 40%);
+}
+.orange {
+  background-color: #ff7b00;
+}
+.orange2 {
+  background-color: #bd5b00;
+}
+.red {
+  background-color: #ed1111;
+}
+.dark-grey {
+  background-color: #a9a9a9;
+}
+.col {
+  height: 100%;
+  width: 50%;
+  display: block;
+}
+
+.box {
+  height: 70%;
+  width: 100%;
+}
+.col2 {
+  height: 100%;
+  width: 50%;
+  display: block;
+}
+
+.box2 {
+  height: 30%;
+  width: 100%;
+}
+.box3 {
+  height: 50%;
+  width: 100%;
+}
+
+.box4 {
+  height: 50%;
+  width: 100%;
+}
+
+.bottom-right {
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+}
+.center-content {
+}
+/*tablet layout*/
+
+@media only screen and (max-width: 800px) {
+  .col {
+    height: 100%;
+    width: 60%;
+  }
+  .col2 {
+    height: 100%;
+    width: 40%;
+  }
+
+  .box {
+    height: 80%;
+    width: 100%;
+  }
+  .box2 {
+    height: 20%;
+    width: 100%;
+  }
+  .box3 {
+    height: 50%;
+    width: 100%;
+  }
+}
+/*la telefono layout*/
+@media only screen and (max-width: 400px) {
+  .col {
+    height: 100%;
+    width: 100%;
+  }
+  .box {
+    height: 25%;
+    width: 50%;
+  }
+  .box2 {
+    height: 100%;
+    width: 100%;
+  }
+  .box3 {
+    height: 100%;
+    width: 100%;
+  }
+  .disappear {
+    display: none;
+  }
+  .center-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .bottom-right {
+  }
+}
